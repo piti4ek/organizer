@@ -1,0 +1,37 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-balanced">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" type="submit" ng-click="vm.checkCode()" menu-toggle="left"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menu-content"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-balanced">
+      <h1 class="title">Left</h1>
+    </ion-header-bar>
+    <ion-content padding="false" class="side-menu-left has-header ">
+      <ion-list id="menu-list1">
+        <ion-item class="item-avatar menu-all-top" id="menu-list-item2">
+          <img src="img/avatar.jpg">
+          <h2>Катя Лель</h2>
+          <p style="white-space:normal;">+38 099 999 9999</p>
+          <ion-option-button class="button-positive">swipe-but1</ion-option-button>
+          <ion-option-button class="button-dark">swipe-but2</ion-option-button>
+        </ion-item>
+        <ion-item class="item-icon-left positive" id="menu-list-item3" type="button" href="/#/menu/events">
+          <i class="icon ion-android-walk"></i>События</ion-item>
+        <ion-item class="item-icon-left balanced" id="menu-list-item5" type="button" href="/#/menu/calendar">
+          <i class="icon ion-android-calendar"></i>Календарь</ion-item>
+        <ion-item class="item-icon-left energized" id="menu-list-item4" type="button">
+          <i class="icon ion-android-people"></i>Группы</ion-item>
+        <ion-item class="item-icon-left calm" id="menu-list-item6" type="button">
+          <i class="icon ion-android-settings"></i>Настройки</ion-item>
+        <ion-item class="item-icon-left royal" id="menu-list-item7" type="button">
+          <i class="icon ion-android-exit"></i>Выход</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

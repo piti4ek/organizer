@@ -1,0 +1,27 @@
+<!-- <style>
+  .full button span {
+    background-color: limegreen;
+    border-radius: 20px;
+    padding: 5px;
+    color: black;
+  }
+  .partially button span {
+    background-color: orange;
+    border-radius: 20px;
+    color: black;
+    padding: 5px;
+  }
+</style> -->
+
+
+<div ng-controller="calendarCtrl">
+  <div class="all-table-cal">
+    <div uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="options"></div>
+  </div>
+
+  <hr/>
+  <button type="button" class="btn btn-sm btn-info" ng-click="today()">Today</button>
+  <button type="button" class="btn btn-sm btn-default" ng-click="setDate(2016, 12, 27)">2016-12-27</button>
+  <button type="button" class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>
+  <button type="button" class="btn btn-sm btn-default" ng-click="toggleMin()" uib-tooltip="After today restriction">Min date</button>
+</div>

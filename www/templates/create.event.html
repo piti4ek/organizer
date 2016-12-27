@@ -1,0 +1,81 @@
+<ion-view title="Создать событие" ng-controller="CreateEventCtrl">
+  <ion-content padding="true" class="manual-remove-top-padding has-header">
+    <ion-list class="manual-list-fullwidth">
+      <ion-item class="item-icon-right">
+        <label class="item item-input item-select no-bor-select">
+          <select id="my-top-sel">
+            <option>Галерея</option>
+            <option selected>Картинки по умолчанию</option>
+            <option>Удалить</option>
+          </select>
+        </label>
+        <i class="icon ion-android-image"></i>
+      </ion-item>
+      <form id="page-form1" class="ng-pristine ng-valid" data-componentid="form1" data-tap-disabled="true">
+        <label class="item item-input ic-selected" data-componentid="input1" data-tap-disabled="true">
+          <input type="text" placeholder="Название мероприятия">
+        </label>
+      </form>
+      <ion-item class="item-icon-right" type="button" ng-click="test()">Место проведения
+        <i class="icon ion-ios-location"></i>
+      </ion-item>
+      <uib-accordion>
+        <div uib-accordion-group class="panel-default" is-open="status.open">
+          <uib-accordion-heading>
+            Участники
+            <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+          </uib-accordion-heading>
+          <ion-item type="button" ng-click="test()">Основной состав</ion-item>
+          <ion-item type="button" ng-click="test()">Запасной состав</ion-item>
+        </div>
+      </uib-accordion>
+      <uib-accordion>
+        <div uib-accordion-group class="panel-default" is-open="status.open">
+          <uib-accordion-heading>
+            Буду учавствовать
+            <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+          </uib-accordion-heading>
+          <ion-item type="number" type="button" ng-click="test()">Не буду учавствовать</ion-item>
+          <ion-item type="number" type="button" ng-click="test()">Еще не определился</ion-item>
+        </div>
+      </uib-accordion>
+      <form id="page-form1" class="ng-pristine ng-valid" data-componentid="form1" data-tap-disabled="true">
+        <label class="item item-input ic-selected" data-componentid="input1" data-tap-disabled="true">
+          <input type="number" placeholder="Требуемое число участников">
+        </label>
+      </form>
+      <form id="page-form1" class="ng-pristine ng-valid" data-componentid="form1" data-tap-disabled="true">
+        <label class="item item-input ic-selected" data-componentid="input1" data-tap-disabled="true">
+          <input type="number" placeholder="Со мной идут (число цифрами)">
+        </label>
+      </form>
+      <uib-accordion>
+        <div uib-accordion-group class="panel-default" is-open="status.open">
+          <uib-accordion-heading>
+            Недобор или избыток участников
+            <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i>
+          </uib-accordion-heading>
+          <ion-list>
+            <ion-checkbox ng-model="filter.red">
+              <div class="check-member-text">
+                Автоматически отклонять все заявки после того, как набрано требуемое количество участников
+              </div>
+            </ion-checkbox>
+            <ion-checkbox ng-model="filter.yellow">
+              <div class="check-member-text">
+                Автоматически отсылать приглашения участникам из запасного состава в случае недобора
+              </div>
+            </ion-checkbox>
+          </ion-list>
+        </div>
+      </uib-accordion>
+      <label class="item item-input ic-selected" data-componentid="input1" data-tap-disabled="true">
+        <input type="text" placeholder="Примечания для участников">
+      </label>
+      <ion-item>
+        <button id="page-button1" class="button button-positive  button-block" data-componentid="button1" data-tap-disabled="true">Создать</button>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

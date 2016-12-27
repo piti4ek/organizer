@@ -1,0 +1,104 @@
+#developments-button1 {
+  border-radius: 50%;
+}
+
+.platform-ios .manual-ios-statusbar-padding {
+  padding-top: 20px;
+}
+
+.manual-remove-top-padding {
+  padding-top: 0px;
+}
+
+.manual-remove-top-padding .scroll {
+  padding-top: 0px !important;
+}
+
+ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.no-bor-select {
+  border: none!important;
+  padding: 10px!important;
+}
+
+.no-bor-select select {
+  direction: ltr!important;
+  max-width: 100%!important;
+}
+
+#my-top-sel {
+  left: 0!important;
+  padding-left: 0!important;
+}
+
+.item-select:after {
+  display: none!important;
+}
+
+.my-select-label {
+  display: none!important;
+  padding: 0!important;
+}
+
+.my-panel-def {
+  border-radius: 0px!important;
+}
+
+.panel-body {
+  padding: 0px!important;
+}
+
+.panel-group {
+  margin-bottom: 0px!important;
+}
+
+.uib-accordion-group {
+  border: none!important;
+}
+
+.check-member-text {
+  overflow: auto!important;
+  text-overflow: inherit!important;
+  white-space: normal!important;
+}
+
+.panel-heading {
+  padding: 17px 15px!important;
+}
+
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+
+.list .item.item-accordion.ng-hide-add, .list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+.all-table-cal {
+  display: inline-block;
+  min-height: 290px;
+  width: 100%;
+}
+
+.all-table-cal table {
+  width: 100%;
+  margin-top: 44px;
+}
+
+.uib-daypicker th {
+  vertical-align: bottom !important;
+}
+
+.pane {
+  overflow: auto!important;
+}
