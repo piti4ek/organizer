@@ -10,7 +10,7 @@
     'DefaultSvc'
   ];
 
-  function CreateEventCtrl($http, $q, AppConfig, DefaultSvc) {
+  function authSvc($http, $q, AppConfig, DefaultSvc) {
 
     var createEvent = {
       createEvent: createEvent,

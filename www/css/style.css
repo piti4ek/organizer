@@ -95,10 +95,27 @@ ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
   margin-top: 44px;
 }
 
-.uib-daypicker th {
+.all-table-cal th {
   vertical-align: bottom !important;
+}
+
+.all-table-cal button {
+  margin: 2.5px 0;
 }
 
 .pane {
   overflow: auto!important;
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.view-container {
+  background-color: rgba(0, 0, 0, 0)!important;
+}
+
+.enter-location-w {
+  width: 100%;
+  white-space: pre-wrap;
 }

@@ -7,7 +7,8 @@ angular.module('organizer', [
     'LocalStorageModule',
     'ngAnimate',
     'ngSanitize',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ion-google-autocomplete'
 ])
 
         .run(function ($ionicPlatform) {

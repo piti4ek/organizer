@@ -16,7 +16,8 @@
           <input type="text" placeholder="Название мероприятия">
         </label>
       </form>
-      <ion-item class="item-icon-right" type="button" ng-click="test()">Место проведения
+      <ion-item class="item-icon-right" type="button">
+        <input type="text" placeholder="Введите адрес" class="enter-location-w" google-autocomplete-suggestion location="data.location" on-selection="vm.onAddressSelection(location)" ng-model="vm.location">
         <i class="icon ion-ios-location"></i>
       </ion-item>
       <uib-accordion>
@@ -73,7 +74,26 @@
         <input type="text" placeholder="Примечания для участников">
       </label>
       <ion-item>
+
         <button id="page-button1" class="button button-positive  button-block" data-componentid="button1" data-tap-disabled="true">Создать</button>
+
+        <div id="map"></div>
+        <style>
+          body,
+          html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+          }
+          #map {
+            height: 100%;
+          }
+
+        </style>
+
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChqksbYTnSVj0Gv8AAtrTwx3evH7DA1bs&callback=initMap" async defer></script> -->
+
+
       </ion-item>
     </ion-list>
 

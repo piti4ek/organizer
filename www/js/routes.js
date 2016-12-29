@@ -56,6 +56,7 @@ angular.module('organizer.routes', [])
     },
   })
 
+
   $urlRouterProvider.otherwise('/login')
 
 });
